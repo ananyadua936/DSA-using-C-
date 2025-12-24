@@ -1,0 +1,23 @@
+#include <iostream>
+#include <set>
+#include <unordered_set>
+using namespace std;
+int main()
+{
+    set<int> s{10, 20, 20, 30};
+    cout << "set: ";
+    for (auto &x : s)
+        cout << x << " ";
+    cout << endl;
+    unordered_set<int> us{10, 20, 20, 30};
+    cout << "unordered_set: ";
+    for (auto &x : us)
+   cout << x << " ";
+    cout << endl;
+    multiset<int> ms{10, 20, 20, 30};
+    cout << "multiset: ";
+    for (auto &x : ms)
+    cout << x << " ";
+    cout << endl;
+    return 0;
+}
