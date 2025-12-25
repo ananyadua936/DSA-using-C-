@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main()
+{
+    stack<string> st;
+    st.push("a");
+    st.push("b");
+    st.push("c");
+    cout << "Stack Content (top to bottom): ";
+    while (!st.empty())
+    {
+        cout << st.top() << " ";
+        st.pop();
+    }
+
+    return 0;
+}
